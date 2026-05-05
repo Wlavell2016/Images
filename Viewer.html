@@ -1,0 +1,10 @@
+<html>
+<body style="margin:0;padding:0;background:#000;">
+  <img id="img" style="width:100%;height:100vh;object-fit:cover;">
+  <script>
+    const community = new URLSearchParams(window.location.search).get('c') || 'Batchewana';
+    document.getElementById('img').src = 
+      `https://raw.githubusercontent.com/Wlavell2016/Images/refs/heads/main/${community}.png`;
+  </script>
+</body>
+</html>
